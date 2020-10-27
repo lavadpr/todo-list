@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import TodoGroup from './TodoGroup';
-import TodoGenerator from './TodoGenerator';
+import TodoGroupContainer from '../containers/TodoGroupContainer';
+import TodoGeneratorContainer from '../containers/TodoGeneratorContainer';
 
 
 class TodoList extends Component {
@@ -8,8 +8,8 @@ class TodoList extends Component {
         return (
             <div>
                 <p>TodoList</p>
-                <TodoGroup/>
-                <TodoGenerator/>
+                <TodoGroupContainer />
+                <TodoGeneratorContainer />
             </div>
         );
     }

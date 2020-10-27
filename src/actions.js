@@ -1,3 +1,3 @@
-export const addItem = todoItem => {
-    return {type: "ADD_ITEM", payload: todoItem}
-}
+export const addItem = (item) => {
+    return {type: "ADD_ITEM", payload: item};
+};
