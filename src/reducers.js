@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
 
-const todoMessage = (state = "", action) => {
+const items = (state = "", action) => {
     if (action.type === "ADD_ITEM") {
         return action.payload;
     }
@@ -9,5 +9,5 @@ const todoMessage = (state = "", action) => {
 
 
 export default combineReducers({
-    todoMessage
+    items
 })
