@@ -8,8 +8,9 @@ const mapDispatchToProps = (dispatch) => ({
     },
 });
 
+// state represents the reducers.js? under combineReducers
 const mapStateToProps = (state) => ({
-    items: state.items
+    items: state.itemsFromReducers
 })
 
 const TodoGeneratorContainer = connect(mapStateToProps, mapDispatchToProps)(TodoGenerator);

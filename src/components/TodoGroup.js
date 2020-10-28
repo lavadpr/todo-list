@@ -4,9 +4,12 @@ import TodoItem from './TodoItem';
 class TodoGroup extends Component {
 
     render() {
+        const items = this.props.items.map((item) => (
+            <p>Testing {item.id} with {item.text}</p>
+        ));
         return (
             <div>
-                || {this.props.items} ||
+                || {items} ||
                 <TodoItem />
             </div>
         );

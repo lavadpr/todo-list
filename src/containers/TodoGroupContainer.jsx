@@ -1,8 +1,9 @@
 import {connect} from "react-redux";
 import TodoGroup from "../components/TodoGroup";
 
+// state represents the reducers.js? under combineReducers
 const mapStateToProps = (state) => ({
-    items: state.items
+    items: state.itemsFromReducers
 });
 
 const TodoGroupContainer = connect(mapStateToProps)(TodoGroup);
